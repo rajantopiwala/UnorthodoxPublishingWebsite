@@ -6691,13 +6691,10 @@ textarea.form-control-lg {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important; }
 
-.bg-dark {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important; }
+.bg-dark {}
 
 .bg-black {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important; }
+     background-image: url(https://img1.wsimg.com/isteam/ip/77bcbbea-b02e-4d66-97ed-7c5e7358c947/dark_haze.png/:/rs=w:984,h:1475);}
 
 .bg-white {
   --bs-bg-opacity: 1;
