@@ -9177,7 +9177,9 @@ img {
   background-color: #202020; }
 
 .bg-black {
-  background-color: #111; }
+  background-image: url(https://i.ibb.co/tZddS08/noname-1441x795.png);
+  background-size: 800px;
+  background-blend-mode: overlay; }
 
 .bg-white-90 {
   background-color: rgba(255, 255, 255, 0.9); }
