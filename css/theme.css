@@ -14,7 +14,7 @@
   --bs-yellow: #ffc107;
   --bs-green: #198754;
   --bs-teal: #20c997;
-  --bs-cyan: #0dcaf0;
+  --bs-cyan: #0dcaf0
   --bs-white: #fff;
   --bs-gray: #8a8a8e;
   --bs-gray-dark: #343a40;
@@ -6688,7 +6688,9 @@ textarea.form-control-lg {
 .bg-dark {}
 
 .bg-black {
-     background-image: url(https://i.ibb.co/tZddS08/noname-1441x795.png);}
+     background-image: url(https://i.ibb.co/tZddS08/noname-1441x795.png);
+     background-size: 800px;
+     background-blend-mode: overlay;}
 
 .bg-white {
   --bs-bg-opacity: 1;
