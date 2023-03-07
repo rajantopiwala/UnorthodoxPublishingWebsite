@@ -84,7 +84,7 @@
 
 body {
     margin: 0;
-    font-family: var(--bs-body-font-family);
+    font-family: adobe-garamond-pro;
     font-size: var(--bs-body-font-size);
     font-weight: var(--bs-body-font-weight);
     line-height: var(--bs-body-line-height);
@@ -847,7 +847,7 @@ button {
     padding-bottom: var(--bs-navbar-brand-padding-y);
     margin-right: var(--bs-navbar-brand-margin-end);
     font-size: var(--bs-navbar-brand-font-size);
-    color: var(--bs-navbar-brand-color);
+    color: rgb(255 255 255 / 90%);
     text-decoration: none;
     white-space: nowrap
 }
