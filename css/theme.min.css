@@ -1259,9 +1259,9 @@ button {
 }
 
 .bg-black {
-    background-image: url(https://i.ibb.co/tZddS08/noname-1441x795.png);
+    background-image: url(https://github.com/KulaOrg/UnothordoxPublishingWebsite/blob/main/assets/Screen_Shot_2023-03-07_at_2.jpg?raw=true);
     background-size: 800px;
-    background-blend-mode: overlay;
+    background-blend-mode: hard-light;
 }
 
 .bg-transparent {
@@ -1449,9 +1449,9 @@ html {
 }
 
 .bg-black {
-    background-image: url(https://i.ibb.co/tZddS08/noname-1441x795.png);
-    background-size: 800px;
-    background-blend-mode: overlay;
+    background-image: url(https://github.com/KulaOrg/UnothordoxPublishingWebsite/blob/main/assets/Screen_Shot_2023-03-07_at_2.jpg?raw=true);
+    background-size: 1441px;
+    background-blend-mode: hard-light;
 }
 
 .py-vh-2 {
