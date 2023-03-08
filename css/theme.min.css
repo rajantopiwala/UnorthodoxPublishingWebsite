@@ -54,7 +54,7 @@
     --bs-body-font-size: 1.2rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
-    --bs-body-color: #ffffff;
+    --bs-body-color: #202020;
     --bs-body-bg: #fff;
     --bs-border-width: 1px;
     --bs-border-style: solid;
@@ -90,8 +90,13 @@ body {
     line-height: var(--bs-body-line-height);
     color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
     -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(17,17,17,0)
+    -webkit-tap-highlight-color: rgba(17,17,17,0);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
@@ -354,8 +359,8 @@ button {
 
 .row>* {
     flex-shrink: 0;
-    width: 172%;
-    max-width: 172%;
+    width: 100%;
+    max-width: 100%;
     padding-right: calc(var(--bs-gutter-x) * .5);
     padding-left: calc(var(--bs-gutter-x) * .5);
     margin-top: var(--bs-gutter-y)
@@ -377,7 +382,7 @@ button {
 
 .col-12 {
     flex: 0 0 auto;
-    width: 166%;
+    width: 100%
 }
 
 .offset-1 {
@@ -847,7 +852,7 @@ button {
     padding-bottom: var(--bs-navbar-brand-padding-y);
     margin-right: var(--bs-navbar-brand-margin-end);
     font-size: var(--bs-navbar-brand-font-size);
-    color: rgb(255 255 255 / 90%);
+    color: var(--bs-navbar-brand-color);
     text-decoration: none;
     white-space: nowrap
 }
@@ -874,7 +879,13 @@ button {
 }
 
 .navbar-dark {
-    background-color: hsl(0deg 0% 13%) !important;
+    --bs-navbar-color: rgba(255, 255, 255, 0.55);
+    --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+    --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+    --bs-navbar-active-color: #fff;
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-brand-hover-color: #fff;
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
 }
 
@@ -1214,7 +1225,7 @@ button {
 }
 
 .fs-5 {
-    font-size: .675rem;
+    font-size: calc(1.275rem + .3vw)!important
 }
 
 .fs-6 {
@@ -1250,18 +1261,24 @@ button {
     color: rgba(var(--bs-secondary-rgb),var(--bs-text-opacity))!important
 }
 
+.text-white {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb),var(--bs-text-opacity))!important
+}
+
 .text-muted {
     --bs-text-opacity: 1;
     color: #8a8a8e!important
 }
 
 .bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important
 }
 
 .bg-black {
-    background-image: url(https://github.com/KulaOrg/UnothordoxPublishingWebsite/blob/main/assets/Screen_Shot_2023-03-07_at_2.jpg?raw=true);
-    background-size: 800px;
-    background-blend-mode: hard-light;
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-black-rgb),var(--bs-bg-opacity))!important
 }
 
 .bg-transparent {
@@ -1394,12 +1411,14 @@ html {
     1px -1px 0 #000,
     -1px 1px 0 #0000003b,
     1px 1px 0 #000;
+    
 }
 
 .navbar-dark a.nav-link {
     color: #fff;
     border-bottom: 2px solid transparent;
     margin: 0 1rem;
+    font-size: 1.33rem
 }
 
 .navbar-dark a.nav-link:hover {
@@ -1456,6 +1475,7 @@ html {
     background-image: url(https://github.com/KulaOrg/UnothordoxPublishingWebsite/blob/main/assets/Screen_Shot_2023-03-07_at_2.jpg?raw=true);
     background-size: 1441px;
     background-blend-mode: hard-light;
+    max-width: 100%;
 }
 
 .py-vh-2 {
