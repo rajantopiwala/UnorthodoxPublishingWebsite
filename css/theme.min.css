@@ -234,8 +234,14 @@ a:not([href]):not([class]),a:not([href]):not([class]):hover {
 }
 
 img,svg {
-    vertical-align: middle
+    vertical-align: middle;
 }
+
+    img1 {
+        width: 100%
+        margin-left: 1px;
+    }
+
 
 label {
     display: inline-block
@@ -882,7 +888,6 @@ button {
     color: var(--bs-navbar-brand-color);
     text-decoration: none;
     white-space: nowrap;
-    margin-left: -142px;
 }
 
 .navbar-brand1 {
