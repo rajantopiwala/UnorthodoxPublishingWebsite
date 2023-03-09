@@ -147,12 +147,13 @@ body {
 }
 
 .h5,h5 {
-    font-size: calc(1.275rem + .3vw)
+    font-size: calc(1.275rem + .3vw);
 }
 
 @media (min-width: 1200px) {
     .h5,h5 {
-        font-size:1.5rem
+        font-size:1.5rem;
+        height: 100%;
     }
 }
 
@@ -162,7 +163,7 @@ body {
 
 p {
     margin-top: 0;
-    margin-bottom: 1rem
+    margin-bottom: -1rem;
 }
 
 address {
@@ -326,12 +327,15 @@ button {
 .display-4 {
     font-size: calc(1.475rem + 2.7vw);
     font-weight: 300;
-    line-height: 1.2
+    line-height: 1.2;
+    text-align: center;
 }
 
 @media (min-width: 1200px) {
     .display-4 {
-        font-size:3.5rem
+        text-align: left;
+        font-size: 2.5rem;
+        margin-top: 30px;
     }
 }
 
@@ -874,7 +878,7 @@ button {
 }
 
 .navbar>.container,.navbar>.container-fluid {
-    display: flex;
+    \: flex;
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between
@@ -1099,7 +1103,6 @@ button {
 }
 
 .border-top {
-    border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important
 }
 
 .border-end {
@@ -1112,7 +1115,7 @@ button {
 
 .border-secondary {
     --bs-border-opacity: 1;
-    border-color: rgba(var(--bs-secondary-rgb),var(--bs-border-opacity))!important
+    border-color: rgba(var(--bs-secondary-rgb),var(--bs-border-opacity))!important;
 }
 
 .border-dark {
@@ -1275,7 +1278,8 @@ button {
 }
 
 .fs-4 {
-    font-size: calc(1.305rem + .66vw)!important
+    font-size: calc(1.105rem + .66vw)!important;
+    margin-left: 15px;
 }
 
 .fs-5 {
@@ -1291,7 +1295,7 @@ button {
 }
 
 .fw-lighter {
-    font-weight: lighter!important
+    font-weight: lighter!important;
 }
 
 .fw-bold {
@@ -1307,6 +1311,11 @@ button {
 
 .text-center {
     text-align: center!important;
+}
+
+.text-center1 {
+    text-align: center!important;
+    margin-left: 156px;
 }
 
 .text-secondary {
@@ -1361,13 +1370,13 @@ button {
     }
 
     .pe-md-4 {
-        padding-right: 1.5rem!important
+        padding-right: 1.5rem!important;
     }
 }
 
 @media (min-width: 992px) {
     .mb-lg-0 {
-        margin-bottom:0!important
+        margin-bottom:0!important;
     }
 
     .text-lg-start {
@@ -1389,7 +1398,7 @@ button {
     }
 
     .fs-5 {
-        font-size: 1rem!important;
+        font-size: 1.2rem!important;
     }
 }
 
@@ -1464,11 +1473,7 @@ html {
     font-size: calc(2.5rem + 1.5vw);
     font-weight: 600;
     letter-spacing: -.02rem;
-    text-shadow: -1px -1px 0 #0000004a,
-    1px -1px 0 #000,
-    -1px 1px 0 #0000003b,
-    1px 1px 0 #000;
-    
+    text-shadow: -1px -1px 0 #ffde5a, 1px -1px 0 #ff914d, -1px 1px 0 #ff1617, 1px 1px 0 #ff914d;
 }
 
 .navbar-dark a.nav-link {
