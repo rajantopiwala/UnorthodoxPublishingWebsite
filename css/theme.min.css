@@ -1407,8 +1407,8 @@ html {
 }
 
 .navbar {
-    padding-top: 32px;
-    padding-bottom: 32px
+    padding-top: -3px;
+    padding-bottom: -18px
 }
 
 .navbar.scrolled {
